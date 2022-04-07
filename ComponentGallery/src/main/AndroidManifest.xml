@@ -15,6 +15,18 @@
         <activity
             android:name=".components.like.LikeButtonActivity"
             android:exported="true" />
+        <activity
+            android:name=".components.skeleton.SkeletonActivity"
+            android:exported="true" />
+        <activity
+            android:name=".components.skeleton.RecyclerViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".components.skeleton.StatusViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".components.skeleton.ViewActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

@@ -7,4 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="light_transparent">#16000000</color>
+    <color name="dark_transparent">#24000000</color>
+    <color name="shimmer_color_for_image">#55efefef</color>
+    <color name="colorLine">#dfdfdf</color>
+    <color name="colorFontGreen">#388e3c</color>
+    <color name="colorFontRed">#F96650</color>
+    <color name="colorFontGreyDark">#333333</color>
+    <color name="colorFontGreyLight">#666666</color>
 </resources>

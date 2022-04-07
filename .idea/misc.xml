@@ -3,18 +3,36 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/drawable/bg_grid_item.xml" value="0.112" />
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/drawable/ic_android_green_500_24dp.xml" value="0.181" />
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/activity_eleme_list.xml" value="0.25364583333333335" />
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/activity_eleme_list1.xml" value="0.25364583333333335" />
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/activity_main.xml" value="0.1296875" />
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/activity_more_functions.xml" value="0.1296875" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/activity_recyclerview.xml" value="0.24114583333333334" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/activity_skeleton.xml" value="0.24114583333333334" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/activity_status_view.xml" value="0.10052083333333334" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/activity_view.xml" value="0.10052083333333334" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/activity_view_skeleton.xml" value="0.10052083333333334" />
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/content_main.xml" value="0.24114583333333334" />
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/item_elemelist1_left.xml" value="0.25364583333333335" />
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/item_elemelist1_right_content.xml" value="0.25364583333333335" />
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/item_elemelist1_right_title.xml" value="0.25364583333333335" />
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/item_function.xml" value="0.264" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/item_news.xml" value="0.10052083333333334" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/item_person.xml" value="0.10052083333333334" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/item_skeleton_news.xml" value="0.24114583333333334" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/item_skeleton_person.xml" value="0.10052083333333334" />
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/item_subtitle.xml" value="0.2" />
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/item_title.xml" value="0.2" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/item_title_more.xml" value="0.10052083333333334" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/item_topic.xml" value="0.10052083333333334" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/layout_default_item_skeleton.xml" value="0.24114583333333334" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/layout_empty_view.xml" value="0.10052083333333334" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/layout_error.xml" value="0.10052083333333334" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/layout_img_skeleton.xml" value="0.10052083333333334" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/layout_progress.xml" value="0.10052083333333334" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/layout_shimmer.xml" value="0.10052083333333334" />
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/likeview.xml" value="0.2265625" />
         <entry key="..\:/MyTestProjects/MyKuangjia/app/src/main/res/layout/activity_main.xml" value="0.1296875" />
         <entry key="..\:/MyTestProjects/MyKuangjia/app/src/main/res/layout/fragment_component.xml" value="0.24114583333333334" />
