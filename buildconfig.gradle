@@ -1,0 +1,37 @@
+ext {
+    lifecycle_version = "2.5.0-alpha01"
+    koin_version = "3.1.5"
+    android = [
+            compileSdk   : 31,
+            applicationId: "com.zxl.mykuangjia",
+            minSdk       : 21,
+            targetSdk    : 31,
+            versionCode  : 1,
+            versionName  : "1.0",
+    ]
+
+    dependencies = [
+            recycler                      : 'androidx.recyclerview:recyclerview:1.2.1',
+            core_ktx                      : 'androidx.core:core-ktx:1.3.2',
+            appcompat                     : 'androidx.appcompat:appcompat:1.2.0',
+            lifecycle_viewmodel_ktx       : "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version",
+            lifecycle_livedata_ktx        : "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version",
+            lifecycle_viewmodel_savedstate: "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version",
+            constraintLayout              : 'androidx.constraintlayout:constraintlayout:2.0.4',
+            material_design               : 'com.google.android.material:material:1.2.1',
+            // Koin main features for Android
+            // koin_android                  : "io.insert-koin:koin-android:$koin_version"
+            androidx_scope                : 'org.koin:koin-androidx-scope:2.0.1',
+            androidx_viewmodel            : 'org.koin:koin-androidx-viewmodel:2.0.1',
+            BaseRecyclerViewAdapterHelper : 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.7',
+            //glide
+            glide                         : 'com.github.bumptech.glide:glide:4.13.0',
+            glide_annotationProcessor     : 'com.github.bumptech.glide:compiler:4.13.0',
+            //toasty
+            toasty                        : 'com.github.GrenderG:Toasty:1.5.2',
+            //rxbinding
+            rxbinding                     : 'com.jakewharton.rxbinding4:rxbinding:4.0.0',
+            //QMUI
+            qmui_android                  : 'com.github.Tencent.QMUI_Android:qmui:2.0.1'
+    ]
+}

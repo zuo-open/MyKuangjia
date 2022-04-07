@@ -1,0 +1,23 @@
+apply from: "../module.build.gradle"
+
+def libs = rootProject.ext.dependencies
+
+dependencies {
+    api libs.appcompat
+    api libs.core_ktx
+    api libs.lifecycle_viewmodel_ktx
+    api libs.lifecycle_livedata_ktx
+    api libs.lifecycle_viewmodel_savedstate
+    api libs.constraintLayout
+    api libs.material_design
+    //api libs.koin_android
+    api libs.androidx_scope
+    api libs.androidx_viewmodel
+    api libs.BaseRecyclerViewAdapterHelper
+    api libs.recycler
+    api libs.glide
+    api libs.glide_annotationProcessor
+    api libs.rxbinding
+    api libs.qmui_android
+
+}
