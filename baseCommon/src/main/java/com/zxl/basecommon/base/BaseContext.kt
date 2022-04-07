@@ -3,7 +3,7 @@ package com.zxl.basecommon.base
 import android.content.Context
 import kotlin.properties.Delegates
 
-class BaseContext {
+open class BaseContext {
 
     companion object {
         private var context: Context by Delegates.notNull()

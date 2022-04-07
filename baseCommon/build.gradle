@@ -19,5 +19,6 @@ dependencies {
     api libs.glide_annotationProcessor
     api libs.rxbinding
     api libs.qmui_android
+    api libs.toasty
 
 }

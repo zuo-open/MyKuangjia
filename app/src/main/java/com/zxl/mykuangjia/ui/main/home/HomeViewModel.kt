@@ -8,10 +8,15 @@ import com.pansoft.basecode.binding.BindingCommand
 class HomeViewModel : ViewModel() {
 
     val btnClick1 = MutableLiveData<Boolean>()
+    val btnClick2 = MutableLiveData<Boolean>()
 
     var btn1Click = BindingCommand<Void>(object : BindingAction {
         override fun call() {
             btnClick1.value = true
         }
     })
+
+    fun btnClick2() {
+        btnClick2.value = true
+    }
 }

@@ -32,6 +32,8 @@ ext {
             //rxbinding
             rxbinding                     : 'com.jakewharton.rxbinding4:rxbinding:4.0.0',
             //QMUI
-            qmui_android                  : 'com.github.Tencent.QMUI_Android:qmui:2.0.1'
+            qmui_android                  : 'com.github.Tencent.QMUI_Android:qmui:2.0.1',
+            //Toasty https://github.com/GrenderG/Toasty
+            toasty                        : 'com.github.GrenderG:Toasty:1.5.2'
     ]
 }

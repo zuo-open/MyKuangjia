@@ -5,13 +5,16 @@
     <application>
         <activity
             android:name=".components.elemelist.ElemeListActivity1"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".components.elemelist.ElemeListActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".components.morefunctions.MoreFunctionsActivity"
-            android:exported="false" />
+            android:exported="true" />
+        <activity
+            android:name=".components.like.LikeButtonActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
