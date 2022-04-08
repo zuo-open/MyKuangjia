@@ -8,6 +8,7 @@ import com.zxl.basecommon.base.BaseFragment
 import com.zxl.basecommon.utils.showError
 import com.zxl.basecommon.utils.showSuccess
 import com.zxl.componentgallery.components.like.LikeButtonActivity
+import com.zxl.componentgallery.components.loading.LoadingActivity
 import com.zxl.componentgallery.components.skeleton.SkeletonActivity
 import com.zxl.mykuangjia.BR
 import com.zxl.mykuangjia.R
@@ -45,6 +46,10 @@ class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding>() {
         //骨架屏
         mViewModel.btnClick3.observe(this) {
             startActivity(Intent(requireActivity(), SkeletonActivity::class.java))
+        }
+        //gloading
+        mViewModel.btnClick4.observe(this) {
+            startActivity(Intent(requireActivity(), LoadingActivity::class.java))
         }
     }
 

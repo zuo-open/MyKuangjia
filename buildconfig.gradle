@@ -36,6 +36,8 @@ ext {
             //Toasty https://github.com/GrenderG/Toasty
             toasty                        : 'com.github.GrenderG:Toasty:1.5.2',
             //shimmerlayout (π«º‹∆¡ π”√)
-            shimmerlayout                 : 'io.supercharge:shimmerlayout:2.1.0'
+            shimmerlayout                 : 'io.supercharge:shimmerlayout:2.1.0',
+            //Gloading https://github.com/luckybilly/Gloading
+            gloading                      : 'com.github.luckybilly:Gloading:v1.1.0'
     ]
 }

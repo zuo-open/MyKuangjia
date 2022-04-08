@@ -11,7 +11,7 @@ import androidx.lifecycle.ViewModel
 import com.zxl.basecommon.utils.PermissionCallBack
 import com.zxl.basecommon.utils.PermissionManager
 
-abstract class BaseFragment<V : ViewModel, D : ViewDataBinding> : Fragment() {
+abstract class BaseFragment<V : BaseViewModel, D : ViewDataBinding> : Fragment() {
 
     protected lateinit var mDataBinding: D
     protected lateinit var mViewModel: V

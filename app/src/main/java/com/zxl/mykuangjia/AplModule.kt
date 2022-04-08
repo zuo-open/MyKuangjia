@@ -1,5 +1,6 @@
 package com.zxl.mykuangjia
 
+import com.zxl.componentgallery.components.loading.LoadingViewModel
 import com.zxl.componentgallery.components.morefunctions.MoreFunctionViewModel
 import com.zxl.mykuangjia.ui.main.component.ComponentViewModel
 import com.zxl.mykuangjia.ui.main.home.HomeViewModel
@@ -12,6 +13,7 @@ val viewModules = module {
     viewModel { HomeViewModel() }
     viewModel { ComponentViewModel() }
     viewModel { ServiceViewModel() }
+    viewModel { LoadingViewModel() }
 }
 
 val aplModule = listOf(viewModules)

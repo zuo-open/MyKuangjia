@@ -4,6 +4,9 @@
 
     <application>
         <activity
+            android:name=".components.loading.LoadingActivity"
+            android:exported="true" />
+        <activity
             android:name=".components.elemelist.ElemeListActivity1"
             android:exported="true" />
         <activity

@@ -4,12 +4,13 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentFactory
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.ViewModel
+import com.zxl.basecommon.base.BaseViewModel
 import com.zxl.mykuangjia.adapter.MenuAdapter
 import com.zxl.mykuangjia.bean.MenuBean
 import com.zxl.mykuangjia.factory.MenuFragmentFactory
 import java.lang.Exception
 
-class MainViewModel : ViewModel() {
+class MainViewModel : BaseViewModel() {
 
     lateinit var mMenuAdapter: MenuAdapter
 

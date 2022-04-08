@@ -7,6 +7,7 @@
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/drawable/ic_android_green_500_24dp.xml" value="0.181" />
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/activity_eleme_list.xml" value="0.25364583333333335" />
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/activity_eleme_list1.xml" value="0.25364583333333335" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/activity_loading.xml" value="0.24114583333333334" />
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/activity_main.xml" value="0.1296875" />
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/activity_more_functions.xml" value="0.1296875" />
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/activity_recyclerview.xml" value="0.24114583333333334" />
@@ -40,6 +41,8 @@
         <entry key="..\:/MyTestProjects/MyKuangjia/app/src/main/res/layout/fragment_service.xml" value="0.24114583333333334" />
         <entry key="..\:/MyTestProjects/MyKuangjia/app/src/main/res/layout/item_menu.xml" value="0.24114583333333334" />
         <entry key="..\:/MyTestProjects/MyKuangjia/baseCommon/src/main/res/layout/activity_main.xml" value="0.1296875" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/baseCommon/src/main/res/layout/layout_global_loading.xml" value="0.24114583333333334" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/huaweisupport/src/main/res/layout/activity_main.xml" value="0.10052083333333334" />
       </map>
     </option>
   </component>

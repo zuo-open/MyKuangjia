@@ -1,6 +1,8 @@
 package com.zxl.mykuangjia
 
 import android.app.Application
+import com.billy.android.loading.Gloading
+import com.zxl.basecommon.adapter.GlobalAdapter
 import com.zxl.basecommon.base.BaseContext
 import com.zxl.basecommon.interfaces.IModules
 import com.zxl.componentgallery.ComponentGalleryModules
@@ -12,13 +14,20 @@ import java.lang.Exception
 
 class Apl : Application() {
 
-    val modules = listOf(ComponentGalleryModules::class.java,MainModules::class.java)
+    val modules = listOf(ComponentGalleryModules::class.java, MainModules::class.java)
 
 
     override fun onCreate() {
         super.onCreate()
         BaseContext.setApplication(this)
         initKoin()
+        //初始化全局loading
+        initGloading()
+    }
+
+    //
+    private fun initGloading() {
+        Gloading.initDefault(GlobalAdapter())
     }
 
     //koin配置

@@ -20,5 +20,6 @@ dependencies {
     api libs.rxbinding
     api libs.qmui_android
     api libs.toasty
+    api libs.gloading
 
 }
