@@ -12,6 +12,7 @@ import android.util.Property;
 import android.view.View;
 
 import androidx.annotation.ColorInt;
+import androidx.annotation.Nullable;
 
 /**
  * Created by Miroslaw Stanek on 21.12.2015.
@@ -43,7 +44,7 @@ public class CircleView extends View {
         init();
     }
 
-    public CircleView(Context context, AttributeSet attrs) {
+    public CircleView(@Nullable  Context context, AttributeSet attrs) {
         super(context, attrs);
         init();
     }

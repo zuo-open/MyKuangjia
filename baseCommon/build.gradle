@@ -1,10 +1,10 @@
 apply from: "../module.build.gradle"
-
 def libs = rootProject.ext.dependencies
 
 dependencies {
     api libs.appcompat
     api libs.core_ktx
+    api libs.annotation
     api libs.lifecycle_viewmodel_ktx
     api libs.lifecycle_livedata_ktx
     api libs.lifecycle_viewmodel_savedstate
@@ -21,5 +21,6 @@ dependencies {
     api libs.qmui_android
     api libs.toasty
     api libs.gloading
+    api libs.aspectJ
 
 }

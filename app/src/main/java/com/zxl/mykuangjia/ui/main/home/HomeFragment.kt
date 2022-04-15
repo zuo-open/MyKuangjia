@@ -4,6 +4,9 @@ import android.content.Intent
 import android.database.Observable
 import android.widget.Toast
 import androidx.lifecycle.Observer
+import byc.imagewatcher.ui.ImageWatcherActivity
+import com.app.hubert.guide.newBieguide.FirstActivity
+import com.app.hubert.guide.newBieguide.NewBieGuideActivity
 import com.zxl.basecommon.base.BaseFragment
 import com.zxl.basecommon.utils.showError
 import com.zxl.basecommon.utils.showSuccess
@@ -50,6 +53,14 @@ class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding>() {
         //gloading
         mViewModel.btnClick4.observe(this) {
             startActivity(Intent(requireActivity(), LoadingActivity::class.java))
+        }
+        //新手引导
+        mViewModel.btnClick5.observe(this) {
+            startActivity(Intent(requireActivity(), FirstActivity::class.java))
+        }
+        //ImageWacther
+        mViewModel.btnClick6.observe(this) {
+            startActivity(Intent(requireActivity(), ImageWatcherActivity::class.java))
         }
     }
 

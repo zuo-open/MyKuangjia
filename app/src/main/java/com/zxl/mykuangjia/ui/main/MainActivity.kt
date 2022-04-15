@@ -1,7 +1,6 @@
 package com.zxl.mykuangjia
 
 import android.view.View
-import android.widget.Toast
 import androidx.appcompat.widget.AppCompatButton
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -10,7 +9,6 @@ import com.zxl.mykuangjia.adapter.MenuAdapter
 import com.zxl.mykuangjia.adapter.OnMenuItemClickListener
 import com.zxl.mykuangjia.bean.MenuBean
 import com.zxl.mykuangjia.databinding.ActivityMainBinding
-import com.zxl.mykuangjia.ui.main.home.HomeFragment
 import org.koin.android.ext.android.get
 
 class MainActivity : BaseActivity<MainViewModel, ActivityMainBinding>(), View.OnClickListener {

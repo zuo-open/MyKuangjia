@@ -13,11 +13,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="我是service"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="点击防抖"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

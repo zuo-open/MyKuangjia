@@ -43,6 +43,18 @@
         <entry key="..\:/MyTestProjects/MyKuangjia/baseCommon/src/main/res/layout/activity_main.xml" value="0.1296875" />
         <entry key="..\:/MyTestProjects/MyKuangjia/baseCommon/src/main/res/layout/layout_global_loading.xml" value="0.24114583333333334" />
         <entry key="..\:/MyTestProjects/MyKuangjia/huaweisupport/src/main/res/layout/activity_main.xml" value="0.10052083333333334" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/imagewatcher/src/main/res/drawable/sheet_dialog_bottom_selector.xml" value="0.112" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/imagewatcher/src/main/res/layout/activity_image_watcher.xml" value="0.24114583333333334" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/imagewatcher/src/main/res/layout/recycler_main_message.xml" value="0.24114583333333334" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/imagewatcher/src/main/res/layout/recycler_message_picture.xml" value="0.24114583333333334" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/imagewatcher/src/main/res/layout/sheet_dialog.xml" value="0.24114583333333334" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/libguide/src/main/res/layout/activity_first.xml" value="0.1" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/libguide/src/main/res/layout/activity_grid_view.xml" value="0.1" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/libguide/src/main/res/layout/activity_newbieguide.xml" value="0.24114583333333334" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/libguide/src/main/res/layout/activity_recylerview.xml" value="0.1" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/libguide/src/main/res/layout/activity_scroll_view.xml" value="0.1" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/libguide/src/main/res/layout/item.xml" value="0.24114583333333334" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/serviceModule/src/main/res/layout/activity_aspect_jactivity.xml" value="0.24114583333333334" />
       </map>
     </option>
   </component>

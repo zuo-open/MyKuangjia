@@ -13,3 +13,7 @@ include ':baseCommon'
 include ':ComponentGallery'
 include ':huaweisupport'
 include ':serviceModule'
+include ':libNetwork'
+include ':libguide'
+
+include ':imagewatcher'

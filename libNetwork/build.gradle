@@ -1,0 +1,7 @@
+apply from: "../module.build.gradle"
+def libs = rootProject.ext.dependencies
+
+dependencies {
+    implementation libs.retrofit
+    implementation libs.convert_gson
+}

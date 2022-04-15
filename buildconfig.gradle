@@ -14,6 +14,7 @@ ext {
             recycler                      : 'androidx.recyclerview:recyclerview:1.2.1',
             core_ktx                      : 'androidx.core:core-ktx:1.3.2',
             appcompat                     : 'androidx.appcompat:appcompat:1.2.0',
+            annotation                    : 'androidx.annotation:annotation:1.2.0',
             lifecycle_viewmodel_ktx       : "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version",
             lifecycle_livedata_ktx        : "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version",
             lifecycle_viewmodel_savedstate: "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version",
@@ -38,6 +39,12 @@ ext {
             //shimmerlayout (π«º‹∆¡ π”√)
             shimmerlayout                 : 'io.supercharge:shimmerlayout:2.1.0',
             //Gloading https://github.com/luckybilly/Gloading
-            gloading                      : 'com.github.luckybilly:Gloading:v1.1.0'
+            gloading                      : 'com.github.luckybilly:Gloading:v1.1.0',
+            //aspectJ
+            aspectJ                       : 'org.aspectj:aspectjrt:1.9.6',
+            //retrofit
+            retrofit                      : 'com.squareup.retrofit2:retrofit:2.9.0',
+            convert_gson                  : 'com.squareup.retrofit2:converter-gson:2.9.0'
+
     ]
 }

@@ -12,6 +12,8 @@ class HomeViewModel : BaseViewModel() {
     val btnClick2 = MutableLiveData<Boolean>()
     val btnClick3 = MutableLiveData<Boolean>()
     val btnClick4 = MutableLiveData<Boolean>()
+    val btnClick5 = MutableLiveData<Boolean>()
+    val btnClick6 = MutableLiveData<Boolean>()
 
     //权限请求
     var btn1Click = BindingCommand<Void>(object : BindingAction {
@@ -33,5 +35,15 @@ class HomeViewModel : BaseViewModel() {
     //gloading
     fun btnClick4() {
         btnClick4.value = true
+    }
+
+    //新手引导
+    fun btnClick5() {
+        btnClick5.value = true
+    }
+
+    //ImageWatcher
+    fun btnClick6() {
+        btnClick6.value = true
     }
 }

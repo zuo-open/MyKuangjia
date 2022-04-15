@@ -6,6 +6,7 @@ import com.zxl.basecommon.adapter.GlobalAdapter
 import com.zxl.basecommon.base.BaseContext
 import com.zxl.basecommon.interfaces.IModules
 import com.zxl.componentgallery.ComponentGalleryModules
+import com.zxl.servicemodule.ServiceModules
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 import org.koin.core.module.Module
@@ -14,7 +15,11 @@ import java.lang.Exception
 
 class Apl : Application() {
 
-    val modules = listOf(ComponentGalleryModules::class.java, MainModules::class.java)
+    val modules = listOf(
+        ComponentGalleryModules::class.java,
+        MainModules::class.java,
+        ServiceModules::class.java
+    )
 
 
     override fun onCreate() {

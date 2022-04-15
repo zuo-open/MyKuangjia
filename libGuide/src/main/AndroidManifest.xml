@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.hubert.guide">
+
+    <application>
+        <activity
+            android:name=".newBieguide.NewBieGuideActivity"
+            android:exported="true" />
+        <activity
+            android:name=".newBieguide.TestFragmentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".newBieguide.GridViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".newBieguide.FirstActivity"
+            android:exported="true" />
+        <activity
+            android:name=".newBieguide.RecyclerViewActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".newBieguide.ScrollViewActivity"
+            android:exported="true" />
+    </application>
+
+
+</manifest>

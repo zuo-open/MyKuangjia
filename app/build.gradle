@@ -37,4 +37,5 @@ android {
 
 dependencies {
     implementation project(':ComponentGallery')
+    implementation project(path: ':serviceModule')
 }
