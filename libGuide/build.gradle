@@ -1,4 +1,5 @@
 apply from: "../module.build.gradle"
+apply from: "../gradle/publish/publishMaven.gradle"
 apply plugin: 'org.jetbrains.kotlin.android'
 def libs = rootProject.ext.dependencies
 dependencies {

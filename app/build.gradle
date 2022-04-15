@@ -33,6 +33,16 @@ android {
     buildFeatures {
         dataBinding = true
     }
+
+    //忽略java代码warning
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    //忽略kotlin代码warning
+    kotlinOptions {
+        suppressWarnings = true
+    }
 }
 
 dependencies {
