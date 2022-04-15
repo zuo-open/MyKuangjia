@@ -25,7 +25,7 @@ afterEvaluate {
             release(MavenPublication) {
                 from components.release
                 groupId = MavenGroupId
-                artifactId = "libcitypicker"
+                artifactId = MavenArtifactId
                 version = MavenVersion
 //                pom {
 //                    name = PROJ_NAME
