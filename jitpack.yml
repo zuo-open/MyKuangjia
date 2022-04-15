@@ -1,0 +1,29 @@
+before_install:
+  - sdk install java 11.0.10-open
+  - sdk use java 11.0.10-open
+
+jdk:
+  - openjdk11
+#  install
+#  - ./gradlew :libutils:assembleRelease
+#  - ./gradlew :libocr:assembleRelease
+#  - ./gradlew :libbase:assembleRelease
+#  - ./gradlew :libxuanzeqi:assembleRelease
+#  - ./gradlew :libzxing:assembleRelease
+#
+#  - ./gradlew :libcitypicker:assembleRelease
+#  - ./gradlew :libexpandablerecyclerview:assembleRelease
+#  - ./gradlew :liblinkagerecyclerview:assembleRelease
+#  - ./gradlew :liblocations:assembleRelease
+#  - ./gradlew :libncalendar:assembleRelease
+#  - ./gradlew :libotherlibs:assembleRelease
+#  - ./gradlew :libpictureselector:assembleRelease
+#  - ./gradlew :libxpopup:assembleRelease
+
+
+#  - ./gradlew :libyanzheng:assembleRelease
+#  - ./gradlew :dkplayer:assembleRelease
+#  - ./gradlew :dkplayer-java:assembleRelease
+#  - ./gradlew :zdkplayer:dkplayer-players:ijkexo:assembleRelease
+#  - ./gradlew :dkplayer-ui:assembleRelease
+#  - ./gradlew :dkplayer-videocache:ijkexo:assembleRelease
