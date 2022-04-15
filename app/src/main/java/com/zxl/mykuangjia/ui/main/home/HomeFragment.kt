@@ -1,12 +1,7 @@
 package com.zxl.mykuangjia.ui.main.home
 
 import android.content.Intent
-import android.database.Observable
-import android.widget.Toast
-import androidx.lifecycle.Observer
 import byc.imagewatcher.ui.ImageWatcherActivity
-import com.app.hubert.guide.newBieguide.FirstActivity
-import com.app.hubert.guide.newBieguide.NewBieGuideActivity
 import com.zxl.basecommon.base.BaseFragment
 import com.zxl.basecommon.utils.showError
 import com.zxl.basecommon.utils.showSuccess
@@ -17,7 +12,6 @@ import com.zxl.mykuangjia.BR
 import com.zxl.mykuangjia.R
 import com.zxl.mykuangjia.databinding.FragmentHomeBinding
 import org.koin.android.ext.android.get
-import java.util.jar.Manifest
 
 class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding>() {
 
@@ -56,7 +50,7 @@ class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding>() {
         }
         //新手引导
         mViewModel.btnClick5.observe(this) {
-            startActivity(Intent(requireActivity(), FirstActivity::class.java))
+            //startActivity(Intent(requireActivity(), FirstActivity::class.java))
         }
         //ImageWacther
         mViewModel.btnClick6.observe(this) {

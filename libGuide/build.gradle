@@ -1,61 +1,6 @@
 apply from: "../module.build.gradle"
-apply plugin: "maven-publish"
-// 指定编码
-tasks.withType(JavaCompile) {
-    options.encoding = 'UTF-8'
-}
-
-// 打包源码
-task androidSourcesJar(type: Jar) {
-    if (project.hasProperty("kotlin")) {
-        from android.sourceSets.main.java.getSrcDirs()
-    } else if (project.hasProperty("android")) {
-        from android.sourceSets.main.java.sourceFiles
-    } else {
-        println project
-        from sourceSets.main.allSource
-    }
-    classifier 'sources'
-}
-
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.release
-
-                groupId = "com.github.zuo-open"
-                artifactId = "libguide"
-                version = "1.0"
-//                pom {
-//                    name = PROJ_NAME
-//                    description = PROJ_DESCRIPTION
-//                    url = PROJ_VCSURL
-//                    licenses {
-//                        license {
-//                            name = "The Apache License, Version 2.0"
-//                            url = "https://www.apache.org/licenses/LICENSE-2.0.txt"
-//                        }
-//                    }
-//                    developers {
-//                        developer {
-//                            id = DEVELOPER_ID
-//                            name = DEVELOPER_NAME
-//                        }
-//                    }
-//                    scm {
-//                        connection = PROJ_ISSUETRACKERURL
-//                        developerConnection = PROJ_VCSURL
-//                        url = PROJ_WEBSITEURL
-//                    }
-//                }
-            }
-        }
-    }
-}
+apply from: "../gradle/publishMaven.gradle"
 def libs = rootProject.ext.dependencies
 dependencies {
-    implementation project(':baseCommon')
-    //chad guide版本
-
+    api project(':baseCommon')
 }
