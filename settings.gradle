@@ -15,5 +15,4 @@ include ':huaweisupport'
 include ':serviceModule'
 include ':libNetwork'
 include ':libguide'
-
 include ':imagewatcher'
