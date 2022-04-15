@@ -3,6 +3,7 @@ buildscript {
     apply from: 'buildconfig.gradle'
     repositories {
         google()
+        mavenLocal()
         mavenCentral()
         maven {
             url "https://www.jitpack.io"
@@ -30,6 +31,7 @@ buildscript {
 allprojects {
     repositories {
         google()
+        mavenLocal()
         mavenCentral()
         maven {
             url "https://www.jitpack.io"
