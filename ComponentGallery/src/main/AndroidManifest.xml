@@ -30,6 +30,8 @@
         <activity
             android:name=".components.skeleton.ViewActivity"
             android:exported="true" />
+
+        <activity android:name=".components.expanableTextView.DemoActivity" />
     </application>
 
 </manifest>

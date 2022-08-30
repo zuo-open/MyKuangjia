@@ -23,5 +23,14 @@ dependencies {
     api libs.toasty
     api libs.gloading
     api libs.aspectJ
+    api libs.immersionBar
+    api libs.implementation_ktx
+    api libs.immersionbar_components
+    api libs.retrofit
+    api libs.convert_gson
+//    implementation project(path: ':libCoreUtils:serviceModule')
+//    implementation project(path: ':libCoreUtils:imagewatcher')
+//    implementation project(path: ':libNetwork')
+//    implementation project(path: ':libCoreUtils:libnewbieguide')
 
 }

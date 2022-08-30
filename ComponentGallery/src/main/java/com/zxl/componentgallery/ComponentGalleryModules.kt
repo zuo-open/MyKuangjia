@@ -7,10 +7,8 @@ import org.koin.core.module.Module
 import org.koin.dsl.module
 
 
-
-
 class ComponentGalleryModules : IModules {
 
-    override fun getLocalModules(): List<Module> =
-        listOf(viewModules)
+    override fun getLocalModules(): List<Module> = aplModule
+
 }

@@ -1,6 +1,0 @@
-apply from: "../module.build.gradle"
-apply from: "../gradle/publishMaven.gradle"
-def libs = rootProject.ext.dependencies
-dependencies {
-    api project(':baseCommon')
-}

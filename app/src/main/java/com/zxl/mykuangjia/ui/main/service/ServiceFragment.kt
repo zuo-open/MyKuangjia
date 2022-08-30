@@ -4,10 +4,8 @@ import android.content.Intent
 import com.zxl.basecommon.base.BaseFragment
 import com.zxl.mykuangjia.BR
 import com.zxl.mykuangjia.R
-import com.zxl.mykuangjia.databinding.FragmentHomeBinding
 import com.zxl.mykuangjia.databinding.FragmentServiceBinding
 import com.zxl.servicemodule.ui.aop.AspectJActivity
-import org.aspectj.lang.annotation.Aspect
 import org.koin.android.ext.android.get
 
 class ServiceFragment : BaseFragment<ServiceViewModel, FragmentServiceBinding>() {

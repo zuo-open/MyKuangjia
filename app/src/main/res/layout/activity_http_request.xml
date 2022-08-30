@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDefaultResource">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.zxl.mykuangjia.ui.main.home.demo.HttpRequestViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{()->viewModel.getHisWeatrher()}"
+            android:text="在ViewModel中请求" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_context"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在context中请求数据" />
+
+    </LinearLayout>
+</layout>

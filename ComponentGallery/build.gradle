@@ -5,6 +5,6 @@ def libs = rootProject.ext.dependencies
 dependencies {
     api project(':baseCommon')
     implementation libs.shimmerlayout
-    api project(path: ':libnewbieguide')
-    api project(path: ':imagewatcher')
+//    api project(path: ':libnewbieguide')
+//    api project(path: ':imagewatcher')
 }

@@ -1,0 +1,16 @@
+apply from: "../module.build.gradle"
+apply from: "../gradle/publishMaven.gradle"
+def libs = rootProject.ext.dependencies
+
+
+dependencies {
+
+    api project(path: ':baseCommon')
+    api project(path: ':libCoreUtils:serviceModule')
+    api project(path: ':libCoreUtils:imagewatcher')
+    api project(path: ':libCoreUtils:libnewbieguide')
+    api project(path: ':libCoreUtils:ticker')
+    api project(path: ':libCoreUtils:updateapputils')
+    api project(path: ':ComponentGallery')
+    api project(path: ':libNetwork')
+}

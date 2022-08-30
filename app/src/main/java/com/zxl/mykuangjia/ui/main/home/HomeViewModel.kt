@@ -14,6 +14,11 @@ class HomeViewModel : BaseViewModel() {
     val btnClick4 = MutableLiveData<Boolean>()
     val btnClick5 = MutableLiveData<Boolean>()
     val btnClick6 = MutableLiveData<Boolean>()
+    val btnClick7 = MutableLiveData<Boolean>()
+    val btnClick8 = MutableLiveData<Boolean>()
+    val btnClick9 = MutableLiveData<Boolean>()
+    var btnClick10 = MutableLiveData<Boolean>();
+
 
     //权限请求
     var btn1Click = BindingCommand<Void>(object : BindingAction {
@@ -46,4 +51,25 @@ class HomeViewModel : BaseViewModel() {
     fun btnClick6() {
         btnClick6.value = true
     }
+
+    //ticker
+    fun btnClick7() {
+        btnClick7.value = true
+    }
+
+    //expanableTextView
+    fun btnClick8() {
+        btnClick8.value = true
+    }
+
+    //updateUtils
+    fun btnClick9() {
+        btnClick9.value = true
+    }
+
+    //网络请求
+    fun btnClick10() {
+        btnClick10.value = true
+    }
+
 }

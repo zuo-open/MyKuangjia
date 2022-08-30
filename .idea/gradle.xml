@@ -14,15 +14,18 @@
             <option value="$PROJECT_DIR$/ComponentGallery" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/baseCommon" />
+            <option value="$PROJECT_DIR$/common" />
             <option value="$PROJECT_DIR$/huaweisupport" />
-            <option value="$PROJECT_DIR$/imagewatcher" />
+            <option value="$PROJECT_DIR$/libCoreUtils" />
+            <option value="$PROJECT_DIR$/libCoreUtils/imagewatcher" />
+            <option value="$PROJECT_DIR$/libCoreUtils/libnewbieguide" />
+            <option value="$PROJECT_DIR$/libCoreUtils/serviceModule" />
+            <option value="$PROJECT_DIR$/libCoreUtils/ticker" />
+            <option value="$PROJECT_DIR$/libCoreUtils/updateapputils" />
             <option value="$PROJECT_DIR$/libNetwork" />
-            <option value="$PROJECT_DIR$/libnewbieguide" />
             <option value="$PROJECT_DIR$/myapplication" />
-            <option value="$PROJECT_DIR$/serviceModule" />
           </set>
         </option>
-        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>

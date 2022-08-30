@@ -29,7 +29,7 @@ abstract class BaseActivity<V : BaseViewModel, D : ViewDataBinding> : AppCompatA
     private var mLoadingHolder: Gloading.Holder? = null
 
     //空视图loading
-    //private var mEmptyHolder: Gloading.Holder? = null
+    private var mEmptyHolder: Gloading.Holder? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -68,9 +68,9 @@ abstract class BaseActivity<V : BaseViewModel, D : ViewDataBinding> : AppCompatA
                 retryData()
             }
         }
-//        showEmptyView()?.apply {
-//            mEmptyHolder = Gloading.getDefault().wrap(this)
-//        }
+        showEmptyView()?.apply {
+            mEmptyHolder = Gloading.getDefault().wrap(this)
+        }
     }
 
     //再次重试

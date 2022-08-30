@@ -46,6 +46,6 @@ android {
 }
 
 dependencies {
-    implementation project(':ComponentGallery')
-    implementation project(path: ':serviceModule')
+    //implementation project(':ComponentGallery')
+    implementation project(path: ':common')
 }

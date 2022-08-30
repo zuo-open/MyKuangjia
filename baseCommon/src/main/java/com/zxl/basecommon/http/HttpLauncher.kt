@@ -17,11 +17,11 @@ import kotlin.coroutines.CoroutineContext
  */
 
 //成功回调
-typealias SuccessCallBack = () -> Unit
+typealias SuccessCallBack = suspend () -> Unit
 //失败回调
-typealias FailCallBack = () -> Unit
+typealias FailCallBack = (suspend (Throwable) -> Unit)?
 //请求结束后回调
-typealias FinishCallBack = () -> Unit
+typealias FinishCallBack = (suspend () -> Unit)?
 
 //viewModel网络请求
 fun ViewModel.httpLaunhcer(
@@ -62,7 +62,7 @@ private fun CoroutineScope.httpLauncher(
                 if (e is ConnectException || e is UnknownHostException) {
                     var message = "网络连接异常"
                 }
-                fail?.invoke() ?: kotlin.run {
+                fail?.invoke(e) ?: kotlin.run {
                     showError(e.message ?: message)
                 }
             }

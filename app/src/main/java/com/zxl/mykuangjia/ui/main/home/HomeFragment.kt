@@ -2,9 +2,13 @@ package com.zxl.mykuangjia.ui.main.home
 
 import android.content.Intent
 import byc.imagewatcher.ui.ImageWatcherActivity
+import com.example.teprinciple.updateappdemo.UpdateUtilsMainActivity
+import com.robinhood.ticker.sample.TickerMainActivity
 import com.zxl.basecommon.base.BaseFragment
+import com.zxl.mykuangjia.ui.main.home.demo.HttpRequestActivity
 import com.zxl.basecommon.utils.showError
 import com.zxl.basecommon.utils.showSuccess
+import com.zxl.componentgallery.components.expanableTextView.DemoActivity
 import com.zxl.componentgallery.components.like.LikeButtonActivity
 import com.zxl.componentgallery.components.loading.LoadingActivity
 import com.zxl.componentgallery.components.skeleton.SkeletonActivity
@@ -56,6 +60,24 @@ class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding>() {
         mViewModel.btnClick6.observe(this) {
             startActivity(Intent(requireActivity(), ImageWatcherActivity::class.java))
         }
+        //ticker
+        mViewModel.btnClick7.observe(this) {
+            startActivity(Intent(requireActivity(), TickerMainActivity::class.java))
+        }
+
+        mViewModel.btnClick8.observe(this) {
+            startActivity(Intent(requireActivity(), DemoActivity::class.java))
+        }
+
+        mViewModel.btnClick9.observe(this) {
+            startActivity(Intent(requireActivity(), UpdateUtilsMainActivity::class.java))
+        }
+
+        mViewModel.btnClick10.observe(this) {
+            startActivity(Intent(requireActivity(), HttpRequestActivity::class.java))
+        }
+
+
     }
 
 

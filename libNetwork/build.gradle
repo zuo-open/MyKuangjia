@@ -4,4 +4,6 @@ def libs = rootProject.ext.dependencies
 dependencies {
     implementation libs.retrofit
     implementation libs.convert_gson
+    implementation libs.logging_interceptor
+    implementation project(path: ':baseCommon')
 }
