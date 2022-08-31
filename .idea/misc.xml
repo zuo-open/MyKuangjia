@@ -8,8 +8,10 @@
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/activity_demo.xml" value="0.240625" />
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/activity_eleme_list.xml" value="0.25364583333333335" />
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/activity_eleme_list1.xml" value="0.25364583333333335" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/activity_gesture_login.xml" value="0.240625" />
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/activity_http_request.xml" value="0.240625" />
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/activity_loading.xml" value="0.24114583333333334" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/activity_login_type.xml" value="0.23958333333333334" />
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/activity_main.xml" value="0.1296875" />
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/activity_more_functions.xml" value="0.1296875" />
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/activity_recyclerview.xml" value="0.24114583333333334" />
@@ -39,6 +41,7 @@
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/layout_shimmer.xml" value="0.10052083333333334" />
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/likeview.xml" value="0.2265625" />
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/list_item.xml" value="0.240625" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/popup_gesture_password_check.xml" value="0.240625" />
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/layout/text_item.xml" value="0.240625" />
         <entry key="..\:/MyTestProjects/MyKuangjia/ComponentGallery/src/main/res/menu/demo.xml" value="0.240625" />
         <entry key="..\:/MyTestProjects/MyKuangjia/app/src/main/res/layout/activity_http_request.xml" value="0.240625" />
@@ -67,6 +70,11 @@
         <entry key="..\:/MyTestProjects/MyKuangjia/libCoreUtils/updateapputils/src/main/res/layout/view_update_dialog_custom.xml" value="0.240625" />
         <entry key="..\:/MyTestProjects/MyKuangjia/libCoreUtils/updateapputils/src/main/res/layout/view_update_dialog_plentiful.xml" value="0.240625" />
         <entry key="..\:/MyTestProjects/MyKuangjia/libCoreUtils/updateapputils/src/main/res/layout/view_update_dialog_simple.xml" value="0.240625" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/libCoreUtils/zxing-lite/src/main/res/drawable/btn_back_selector.xml" value="0.2325" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/libCoreUtils/zxing-lite/src/main/res/layout/activity_capture_with_select_photo.xml" value="0.240625" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/libCoreUtils/zxing-lite/src/main/res/layout/activity_main.xml" value="0.22604166666666667" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/libCoreUtils/zxing-lite/src/main/res/layout/top_title_back_bar.xml" value="0.1" />
+        <entry key="..\:/MyTestProjects/MyKuangjia/libCoreUtils/zxing-lite/src/main/res/layout/zxl_capture.xml" value="0.240625" />
         <entry key="..\:/MyTestProjects/MyKuangjia/libguide/src/main/res/layout/activity_first.xml" value="0.1" />
         <entry key="..\:/MyTestProjects/MyKuangjia/libguide/src/main/res/layout/activity_grid_view.xml" value="0.1" />
         <entry key="..\:/MyTestProjects/MyKuangjia/libguide/src/main/res/layout/activity_newbieguide.xml" value="0.24114583333333334" />

@@ -11,6 +11,7 @@ dependencies {
     api project(path: ':libCoreUtils:libnewbieguide')
     api project(path: ':libCoreUtils:ticker')
     api project(path: ':libCoreUtils:updateapputils')
+    api project(path: ':libCoreUtils:zxing-lite')
     api project(path: ':ComponentGallery')
     api project(path: ':libNetwork')
 }

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewmodel"
+            type="com.zxl.componentgallery.components.fingergesture.ui.GestureLoginViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.gesturelogin.GestureLoginActivity">
+
+        <View
+            android:id="@+id/vLine"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#F5F4F9"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.zxl.componentgallery.components.fingergesture.widgets.GestureLockLayout
+            android:id="@+id/gllShow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:visibility="@{viewmodel.gestureResultShow?View.VISIBLE:View.INVISIBLE}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vLine"
+            app:ringInnerDrawColor="@color/gesture_circle_fill"
+            app:ringInnerErrColor="@color/gesture_layout_error"
+            app:ringInnerNormalColor="#D8DDE6"
+            app:ringOuterDrawColor="@color/gesture_circle_fill"
+            app:ringOuterErrColor="@color/gesture_layout_error"
+            app:ringOuterNormalColor="#D8DDE6" />
+
+        <LinearLayout
+            android:id="@+id/ll_gesture_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/gllShow">
+
+            <TextView
+                android:id="@+id/tv_gesture_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ellipsize="middle"
+                android:gravity="center"
+                android:maxEms="15"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gllShow" />
+
+            <TextView
+                android:id="@+id/tv_gesture_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="middle"
+                android:gravity="center"
+                android:maxEms="15"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gllShow" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintDimensionRatio="H,1:1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_gesture_content"
+            app:layout_constraintWidth_percent="0.72">
+
+            <com.zxl.componentgallery.components.fingergesture.widgets.GestureLockLayout
+                android:id="@+id/gestureLockLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:allowInteract="true"
+                app:childHasRoundBorder="true"
+                app:commonTextColor="#333333"
+                app:errorTextColor="#e81034"
+                app:layoutChildCount="3"
+                app:ringInnerNormalColor="@android:color/transparent"
+                app:ringOuterNormalColor="#D8DDE6"
+                app:ringOuterStrokeWidth="2dp"
+                app:ringOuterStyle="stroke" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_gesture_more"
+            onClickCommand="@{viewmodel.showMoreCommand}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="更多"
+            android:textColor="#666666"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

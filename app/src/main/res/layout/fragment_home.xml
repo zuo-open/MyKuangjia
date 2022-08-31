@@ -141,7 +141,30 @@
                 android:text="多语言"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/btn_9" />
+                app:layout_constraintTop_toBottomOf="@id/btn_10" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="@{()->viewModel.btnClick12()}"
+                android:text="手势识别"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_11" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="@{()->viewModel.btnClick13()}"
+                android:text="二维码扫描"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_12" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

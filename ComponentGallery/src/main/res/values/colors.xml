@@ -15,4 +15,16 @@
     <color name="colorFontRed">#F96650</color>
     <color name="colorFontGreyDark">#333333</color>
     <color name="colorFontGreyLight">#666666</color>
+
+
+    <!--手势登陆-->
+    <color name="gesture_circle_fill_default">#d9dee7</color><!--默认圆心颜色-->
+    <color name="gesture_circle_fill">#549cff</color>    <!--选中圆心颜色-->
+    <color name="gesture_circle_border">#ddebff</color>  <!--默认圆环颜色-->
+    <color name="gesture_layout_right">#5565ff</color> <!--正确连线-->
+    <color name="gesture_layout_error">#f00</color>  <!-- 错误画笔-->
+    <color name="colorChecked">#F8A916</color>
+    <color name="colorCheckedErr">#FF3232</color>
+    <color name="colorRoundBorderErr">#FFE1E1</color>
+
 </resources>

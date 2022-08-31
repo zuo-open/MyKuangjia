@@ -32,6 +32,10 @@
             android:exported="true" />
 
         <activity android:name=".components.expanableTextView.DemoActivity" />
+
+        <activity android:name=".components.fingergesture.ui.GestureLoginActivity" />
+
+        <activity android:name=".components.fingergesture.ui.LoginTypeActivity" />
     </application>
 
 </manifest>

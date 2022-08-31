@@ -1,0 +1,50 @@
+apply plugin: 'com.android.library'
+//apply from: 'bintray.gradle'
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion "31.0.0"
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 31
+        versionCode 34
+        versionName "2.2.1"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+        warning 'InvalidPackage'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+//task javadoc(type: Javadoc) {
+//    source = android.sourceSets.main.java.srcDirs
+//    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+//}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation "com.google.zxing:core:3.3.3"
+    implementation 'androidx.camera:camera-core:1.1.0-rc02'
+    implementation 'androidx.camera:camera-camera2:1.1.0-rc02'
+    implementation 'androidx.camera:camera-lifecycle:1.1.0-rc02'
+    implementation 'androidx.camera:camera-view:1.1.0-rc02'
+    implementation 'com.google.android.material:material:1.2.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'pub.devrel:easypermissions:3.0.0'
+}

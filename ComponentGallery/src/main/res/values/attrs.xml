@@ -28,4 +28,38 @@
         <attr name="expandCollapseToggleId" format="reference" />
         <attr name="expandToggleOnTextClick" format="boolean" />
     </declare-styleable>
+
+    <declare-styleable name="GestureLockLayout">
+        <attr name="childHasRoundBorder" format="boolean" /><!-- 子元素圆是否有圆形外框 -->
+        <attr name="layoutChildCount" format="integer" /><!--  每行或者列的元素个数 -->
+        <attr name="allowInteract" format="boolean" /><!-- 是否允许时间交互，主要是手势解锁 -->
+        <attr name="commonTextColor" format="color"></attr>  <!--正常文本颜色-->
+        <attr name="errorTextColor" format="color"></attr> <!--  错误文本颜色-->
+        <attr name="gestureCircleFillColor" format="color" /><!-- 圆的填充颜色 -->
+
+        <attr name="showDraw" format="boolean" /><!-- 是否显示绘制轨迹 -->
+
+        <attr name="ringInnerNormalColor" format="color"></attr>  <!--内圆正常色-->
+        <attr name="ringOuterNormalColor" format="color"></attr>  <!--外圆正常色-->
+        <attr name="ringInnerDrawColor" format="color"></attr>  <!--内圆绘制色-->
+        <attr name="ringOuterDrawColor" format="color"></attr>  <!--外圆绘制色-->
+        <attr name="ringInnerErrColor" format="color"></attr>  <!--内圆错误色-->
+        <attr name="ringOuterErrColor" format="color"></attr>  <!--外圆错误色-->
+
+        <attr name="ringInnerStyle"><!-- 圆的样式：. -->
+            <flag name="fill" value="1" /> <!-- 圆 -->
+            <flag name="stroke" value="2" />  <!-- 环 -->
+        </attr>
+
+        <attr name="ringOuterStyle">
+            <flag name="fill" value="1" />
+            <flag name="stroke" value="2" />
+        </attr>
+
+        <attr name="ringInnerStrokeWidth" format="dimension" /><!-- 内圆绘制宽度 Style = STROKE 生效 -->
+        <attr name="ringOuterStrokeWidth" format="dimension" /><!-- 外圆绘制宽度 Style = STROKE 生效 -->
+
+    </declare-styleable>
+
+
 </resources>

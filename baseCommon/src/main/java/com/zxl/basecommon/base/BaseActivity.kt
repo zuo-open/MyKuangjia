@@ -50,7 +50,7 @@ abstract class BaseActivity<V : BaseViewModel, D : ViewDataBinding> : AppCompatA
     }
 
     //基类设置的事件监听
-    private fun initDefaultObserver() {
+    protected open fun initDefaultObserver() {
 
         mViewModel.mBaseObserver.showLoadingEvent.observe(this) {
             mLoadingHolder?.showLoading()

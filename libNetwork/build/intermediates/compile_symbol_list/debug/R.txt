@@ -10,6 +10,8 @@ int anim abc_slide_out_bottom 0x0
 int anim abc_slide_out_top 0x0
 int anim abc_tooltip_enter 0x0
 int anim abc_tooltip_exit 0x0
+int anim activity_alpha_in 0x0
+int anim activity_alpha_out 0x0
 int anim btn_checkbox_to_checked_box_inner_merged_animation 0x0
 int anim btn_checkbox_to_checked_box_outer_merged_animation 0x0
 int anim btn_checkbox_to_checked_icon_null_animation 0x0

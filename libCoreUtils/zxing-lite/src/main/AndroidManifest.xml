@@ -1,0 +1,48 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.king.zxing">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <application>
+        <activity
+            android:name=".demo.ZxingLiteMainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.king.zxing.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CaptureTheme" />
+
+        <activity
+            android:name=".demo.EasyCaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CaptureTheme" />
+        <activity
+            android:name=".demo.CustomCaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CaptureTheme" />
+
+        <activity
+            android:name=".demo.CaptureFragmentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CaptureTheme" />
+
+        <activity
+            android:name=".demo.CustomActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CaptureTheme" />
+
+        <activity
+            android:name=".demo.QRCodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CaptureTheme" />
+
+        <activity
+            android:name=".demo.CodeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".demo.CaptureWithSelectPhotoActivity" />
+    </application>
+</manifest>

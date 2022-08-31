@@ -22,6 +22,7 @@
             <option value="$PROJECT_DIR$/libCoreUtils/serviceModule" />
             <option value="$PROJECT_DIR$/libCoreUtils/ticker" />
             <option value="$PROJECT_DIR$/libCoreUtils/updateapputils" />
+            <option value="$PROJECT_DIR$/libCoreUtils/zxing-lite" />
             <option value="$PROJECT_DIR$/libNetwork" />
             <option value="$PROJECT_DIR$/myapplication" />
           </set>

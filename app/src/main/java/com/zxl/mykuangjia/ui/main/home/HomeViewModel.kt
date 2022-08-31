@@ -17,9 +17,10 @@ class HomeViewModel : BaseViewModel() {
     val btnClick7 = MutableLiveData<Boolean>()
     val btnClick8 = MutableLiveData<Boolean>()
     val btnClick9 = MutableLiveData<Boolean>()
-    var btnClick10 = MutableLiveData<Boolean>();
-    var btnClick11 = MutableLiveData<Boolean>();
-
+    var btnClick10 = MutableLiveData<Boolean>()
+    var btnClick11 = MutableLiveData<Boolean>()
+    var btnClick12 = MutableLiveData<Boolean>()
+    var btnClick13 = MutableLiveData<Boolean>()
 
     //权限请求
     var btn1Click = BindingCommand<Void>(object : BindingAction {
@@ -76,6 +77,16 @@ class HomeViewModel : BaseViewModel() {
     //网络请求
     fun btnClick11() {
         btnClick11.value = true
+    }
+
+    //手势识别
+    fun btnClick12() {
+        btnClick12.value = true
+    }
+
+    //二维码扫描
+    fun btnClick13() {
+        btnClick13.value = true
     }
 
 }

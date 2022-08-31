@@ -3,12 +3,16 @@ package com.zxl.mykuangjia.ui.main.home
 import android.content.Intent
 import byc.imagewatcher.ui.ImageWatcherActivity
 import com.example.teprinciple.updateappdemo.UpdateUtilsMainActivity
+import com.king.zxing.demo.ZxingLiteMainActivity
 import com.robinhood.ticker.sample.TickerMainActivity
 import com.zxl.basecommon.base.BaseFragment
 import com.zxl.mykuangjia.ui.main.home.http.HttpRequestActivity
 import com.zxl.basecommon.utils.showError
 import com.zxl.basecommon.utils.showSuccess
 import com.zxl.componentgallery.components.expanableTextView.DemoActivity
+import com.zxl.componentgallery.components.fingergesture.ui.GestureLoginActivity
+import com.zxl.componentgallery.components.fingergesture.ui.GestureLoginActivity.Companion.startActivityForReset
+import com.zxl.componentgallery.components.fingergesture.ui.LoginTypeActivity
 import com.zxl.componentgallery.components.like.LikeButtonActivity
 import com.zxl.componentgallery.components.loading.LoadingActivity
 import com.zxl.componentgallery.components.skeleton.SkeletonActivity
@@ -80,6 +84,14 @@ class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding>() {
 
         mViewModel.btnClick11.observe(this) {
             startActivity(Intent(requireActivity(), MultilanguageActivity::class.java))
+        }
+
+        mViewModel.btnClick12.observe(this) {
+            startActivity(Intent(requireActivity(), LoginTypeActivity::class.java))
+        }
+
+        mViewModel.btnClick13.observe(this) {
+            startActivity(Intent(requireActivity(), ZxingLiteMainActivity::class.java))
         }
 
 
