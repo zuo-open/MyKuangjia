@@ -1,4 +1,4 @@
-package com.zxl.mykuangjia.ui.main.home.demo
+package com.zxl.mykuangjia.ui.main.home.http
 
 import com.google.gson.Gson
 import com.zxl.basecommon.base.BaseViewModel

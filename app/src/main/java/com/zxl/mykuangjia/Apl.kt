@@ -13,7 +13,7 @@ import org.koin.core.module.Module
 import java.lang.Exception
 
 
-class Apl : Application() {
+class Apl : BaseContext() {
 
     val modules = listOf(
         ComponentGalleryModules::class.java,
@@ -24,10 +24,10 @@ class Apl : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        BaseContext.setApplication(this)
         initKoin()
         //初始化全局loading
         initGloading()
+        setApplication(this)
     }
 
     //

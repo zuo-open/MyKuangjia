@@ -5,7 +5,7 @@ import byc.imagewatcher.ui.ImageWatcherActivity
 import com.example.teprinciple.updateappdemo.UpdateUtilsMainActivity
 import com.robinhood.ticker.sample.TickerMainActivity
 import com.zxl.basecommon.base.BaseFragment
-import com.zxl.mykuangjia.ui.main.home.demo.HttpRequestActivity
+import com.zxl.mykuangjia.ui.main.home.http.HttpRequestActivity
 import com.zxl.basecommon.utils.showError
 import com.zxl.basecommon.utils.showSuccess
 import com.zxl.componentgallery.components.expanableTextView.DemoActivity
@@ -15,6 +15,7 @@ import com.zxl.componentgallery.components.skeleton.SkeletonActivity
 import com.zxl.mykuangjia.BR
 import com.zxl.mykuangjia.R
 import com.zxl.mykuangjia.databinding.FragmentHomeBinding
+import com.zxl.mykuangjia.ui.main.home.multilanguage.MultilanguageActivity
 import org.koin.android.ext.android.get
 
 class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding>() {
@@ -75,6 +76,10 @@ class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding>() {
 
         mViewModel.btnClick10.observe(this) {
             startActivity(Intent(requireActivity(), HttpRequestActivity::class.java))
+        }
+
+        mViewModel.btnClick11.observe(this) {
+            startActivity(Intent(requireActivity(), MultilanguageActivity::class.java))
         }
 
 

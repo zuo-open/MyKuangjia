@@ -18,6 +18,7 @@ class HomeViewModel : BaseViewModel() {
     val btnClick8 = MutableLiveData<Boolean>()
     val btnClick9 = MutableLiveData<Boolean>()
     var btnClick10 = MutableLiveData<Boolean>();
+    var btnClick11 = MutableLiveData<Boolean>();
 
 
     //权限请求
@@ -70,6 +71,11 @@ class HomeViewModel : BaseViewModel() {
     //网络请求
     fun btnClick10() {
         btnClick10.value = true
+    }
+
+    //网络请求
+    fun btnClick11() {
+        btnClick11.value = true
     }
 
 }

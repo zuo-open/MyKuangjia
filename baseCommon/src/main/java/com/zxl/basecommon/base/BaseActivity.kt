@@ -1,5 +1,6 @@
 package com.zxl.basecommon.base
 
+import android.content.Context
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -9,6 +10,7 @@ import androidx.lifecycle.ViewModel
 import com.billy.android.loading.Gloading
 import com.zxl.basecommon.R
 import com.zxl.basecommon.databinding.ActivityBaseBinding
+import com.zxl.basecommon.utils.MultiLanguageUtils
 import com.zxl.basecommon.utils.PermissionCallBack
 import com.zxl.basecommon.utils.PermissionManager
 import com.zxl.basecommon.widgets.GlobalLoadingStatusView
@@ -40,6 +42,11 @@ abstract class BaseActivity<V : BaseViewModel, D : ViewDataBinding> : AppCompatA
         initPermission()
         initGloading()
         initDefaultObserver()
+    }
+
+
+    override fun attachBaseContext(newBase: Context) {
+        super.attachBaseContext(MultiLanguageUtils.attachBaseContext(newBase))
     }
 
     //基类设置的事件监听

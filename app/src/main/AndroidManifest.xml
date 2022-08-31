@@ -25,7 +25,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.zxl.mykuangjia.ui.main.home.demo.HttpRequestActivity" />
+        <activity android:name="com.zxl.mykuangjia.ui.main.home.http.HttpRequestActivity" />
+        <activity android:name=".ui.main.home.multilanguage.MultilanguageActivity" />
     </application>
 
 </manifest>

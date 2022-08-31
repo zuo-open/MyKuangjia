@@ -1,4 +1,4 @@
-package com.zxl.mykuangjia.ui.main.home.demo
+package com.zxl.mykuangjia.ui.main.home.http
 
 class WeatherListBean {
     var list: List<WeatherBean>? = null

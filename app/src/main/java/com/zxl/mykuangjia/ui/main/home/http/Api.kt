@@ -1,4 +1,4 @@
-package com.zxl.mykuangjia.ui.main.home.demo
+package com.zxl.mykuangjia.ui.main.home.http
 
 import com.zxl.basecommon.http.HttpResult
 import retrofit2.http.*
