@@ -1,0 +1,27 @@
+apply plugin: 'com.android.library'
+
+def configs = rootProject.ext.android
+android {
+    compileSdkVersion configs.compileSdk
+
+    defaultConfig {
+        minSdkVersion configs.minSdk
+        targetSdkVersion configs.targetSdk
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+//   defaultPublishConfig "debug"
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    compileOnly 'com.google.android.material:material:1.0.0'
+    compileOnly 'androidx.legacy:legacy-support-v4:1.0.0'
+    api project(':libCoreUtils:agentweb-core')
+}

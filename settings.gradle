@@ -21,6 +21,9 @@ include ':libCoreUtils:imagewatcher'
 include ':libCoreUtils:ticker'
 include ':libCoreUtils:updateapputils'
 include ':libCoreUtils:zxing-lite'
+include ':libCoreUtils:agentweb-core'
+include ':libCoreUtils:agentweb-filechooser'
+include ':libCoreUtils:AgentWebsample'
 
 
 include ':common'

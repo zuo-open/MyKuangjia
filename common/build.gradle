@@ -14,4 +14,5 @@ dependencies {
     api project(path: ':libCoreUtils:zxing-lite')
     api project(path: ':ComponentGallery')
     api project(path: ':libNetwork')
+    api project(path: ':libCoreUtils:AgentWebsample')
 }

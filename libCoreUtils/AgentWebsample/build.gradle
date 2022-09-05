@@ -1,0 +1,42 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+}
+apply from: "../../module.build.gradle"
+
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation project(path: ':libCoreUtils:agentweb-filechooser')
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    api 'androidx.appcompat:appcompat:1.0.0'
+    api 'com.google.android.material:material:1.0.0'
+    //    compile "com.android.support:support-v4:${SUPPORT_LIB_VERSION}"
+   //    api project(':agentweb-core')
+//    api project(':agentweb-filechooser')
+    implementation 'com.github.Justson:Downloader:v5.0.0-androidx'
+//    implementation 'com.github.Justson.AgentWeb:agentweb-core:v5.0.0-alpha.1-androidx'
+//    implementation 'com.github.Justson.AgentWeb:agentweb-filechooser:v5.0.0-alpha.1-androidx'
+//    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.1'
+//    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+//    testImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+//    compile files('libs/alipaysdk-20170922.jar')
+    implementation 'us.feras.mdv:markdownview:1.1.0'
+    implementation 'com.lcodecorex:tkrefreshlayout:1.0.7'
+    implementation 'com.github.lzyzsd:jsbridge:1.0.4'
+    implementation 'com.google.code.gson:gson:2.3.1'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.3'
+    implementation 'com.tencent.sonic:sdk:2.0.0'
+    implementation 'com.coolindicator.sdk:coolindicator:1.0.0-beta'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.github.Justson:flying-pigeon:v1.0.7'
+    implementation 'com.github.Justson:dispatch-queue:v1.0.5'
+    implementation('com.github.Ferfalk:SimpleSearchView:0.2.0', {
+        exclude group: 'com.android.support'
+    })
+    implementation 'top.zibin:Luban:1.1.8'
+}

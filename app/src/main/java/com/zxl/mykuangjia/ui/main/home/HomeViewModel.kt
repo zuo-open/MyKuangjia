@@ -21,6 +21,7 @@ class HomeViewModel : BaseViewModel() {
     var btnClick11 = MutableLiveData<Boolean>()
     var btnClick12 = MutableLiveData<Boolean>()
     var btnClick13 = MutableLiveData<Boolean>()
+    var btnClick14 = MutableLiveData<Boolean>()
 
     //权限请求
     var btn1Click = BindingCommand<Void>(object : BindingAction {
@@ -87,6 +88,11 @@ class HomeViewModel : BaseViewModel() {
     //二维码扫描
     fun btnClick13() {
         btnClick13.value = true
+    }
+
+    //AgentWeb
+    fun btnClick14() {
+        btnClick14.value = true
     }
 
 }

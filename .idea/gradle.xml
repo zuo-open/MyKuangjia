@@ -17,6 +17,9 @@
             <option value="$PROJECT_DIR$/common" />
             <option value="$PROJECT_DIR$/huaweisupport" />
             <option value="$PROJECT_DIR$/libCoreUtils" />
+            <option value="$PROJECT_DIR$/libCoreUtils/AgentWebsample" />
+            <option value="$PROJECT_DIR$/libCoreUtils/agentweb-core" />
+            <option value="$PROJECT_DIR$/libCoreUtils/agentweb-filechooser" />
             <option value="$PROJECT_DIR$/libCoreUtils/imagewatcher" />
             <option value="$PROJECT_DIR$/libCoreUtils/libnewbieguide" />
             <option value="$PROJECT_DIR$/libCoreUtils/serviceModule" />

@@ -3,6 +3,7 @@ package com.zxl.mykuangjia.ui.main.home
 import android.content.Intent
 import byc.imagewatcher.ui.ImageWatcherActivity
 import com.example.teprinciple.updateappdemo.UpdateUtilsMainActivity
+import com.just.agentweb.sample.activity.AgentWebMainActivity
 import com.king.zxing.demo.ZxingLiteMainActivity
 import com.robinhood.ticker.sample.TickerMainActivity
 import com.zxl.basecommon.base.BaseFragment
@@ -92,6 +93,10 @@ class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding>() {
 
         mViewModel.btnClick13.observe(this) {
             startActivity(Intent(requireActivity(), ZxingLiteMainActivity::class.java))
+        }
+
+        mViewModel.btnClick14.observe(this) {
+            startActivity(Intent(requireActivity(), AgentWebMainActivity::class.java))
         }
 
 
