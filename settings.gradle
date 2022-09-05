@@ -24,6 +24,8 @@ include ':libCoreUtils:zxing-lite'
 include ':libCoreUtils:agentweb-core'
 include ':libCoreUtils:agentweb-filechooser'
 include ':libCoreUtils:AgentWebsample'
+include ':libCoreUtils:FingerPrintManager'
+include ':libCoreUtils:GestureUnlock'
 
 
 include ':common'

@@ -175,7 +175,18 @@
                 android:text="AgentWeb"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/btn_12" />
+                app:layout_constraintTop_toBottomOf="@id/btn_13" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="@{()->viewModel.btnClick15()}"
+                android:text="指纹识别"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_14" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -15,4 +15,6 @@ dependencies {
     api project(path: ':ComponentGallery')
     api project(path: ':libNetwork')
     api project(path: ':libCoreUtils:AgentWebsample')
+    api project(path: ':libCoreUtils:FingerPrintManager')
+    api project(path: ':libCoreUtils:GestureUnlock')
 }

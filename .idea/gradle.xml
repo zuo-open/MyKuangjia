@@ -18,6 +18,8 @@
             <option value="$PROJECT_DIR$/huaweisupport" />
             <option value="$PROJECT_DIR$/libCoreUtils" />
             <option value="$PROJECT_DIR$/libCoreUtils/AgentWebsample" />
+            <option value="$PROJECT_DIR$/libCoreUtils/FingerPrintManager" />
+            <option value="$PROJECT_DIR$/libCoreUtils/GestureUnlock" />
             <option value="$PROJECT_DIR$/libCoreUtils/agentweb-core" />
             <option value="$PROJECT_DIR$/libCoreUtils/agentweb-filechooser" />
             <option value="$PROJECT_DIR$/libCoreUtils/imagewatcher" />

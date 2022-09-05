@@ -2,6 +2,8 @@ package com.zxl.mykuangjia.ui.main.home
 
 import android.content.Intent
 import byc.imagewatcher.ui.ImageWatcherActivity
+import com.dds.fingerprintidentify.demo.FingerPrintActivity
+import com.dds.gestureunlock.demo.GestureLockActivity
 import com.example.teprinciple.updateappdemo.UpdateUtilsMainActivity
 import com.just.agentweb.sample.activity.AgentWebMainActivity
 import com.king.zxing.demo.ZxingLiteMainActivity
@@ -88,7 +90,7 @@ class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding>() {
         }
 
         mViewModel.btnClick12.observe(this) {
-            startActivity(Intent(requireActivity(), LoginTypeActivity::class.java))
+            startActivity(Intent(requireActivity(), GestureLockActivity::class.java))
         }
 
         mViewModel.btnClick13.observe(this) {
@@ -97,6 +99,10 @@ class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding>() {
 
         mViewModel.btnClick14.observe(this) {
             startActivity(Intent(requireActivity(), AgentWebMainActivity::class.java))
+        }
+
+        mViewModel.btnClick15.observe(this) {
+            startActivity(Intent(requireActivity(), FingerPrintActivity::class.java))
         }
 
 

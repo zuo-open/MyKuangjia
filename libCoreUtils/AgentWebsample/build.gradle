@@ -3,6 +3,7 @@ plugins {
     id 'kotlin-android'
 }
 apply from: "../../module.build.gradle"
+apply from: "../../gradle/publishMaven.gradle"
 
 
 dependencies {
@@ -15,7 +16,7 @@ dependencies {
     api 'androidx.appcompat:appcompat:1.0.0'
     api 'com.google.android.material:material:1.0.0'
     //    compile "com.android.support:support-v4:${SUPPORT_LIB_VERSION}"
-   //    api project(':agentweb-core')
+    //    api project(':agentweb-core')
 //    api project(':agentweb-filechooser')
     implementation 'com.github.Justson:Downloader:v5.0.0-androidx'
 //    implementation 'com.github.Justson.AgentWeb:agentweb-core:v5.0.0-alpha.1-androidx'

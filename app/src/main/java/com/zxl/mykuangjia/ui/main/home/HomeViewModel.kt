@@ -22,6 +22,7 @@ class HomeViewModel : BaseViewModel() {
     var btnClick12 = MutableLiveData<Boolean>()
     var btnClick13 = MutableLiveData<Boolean>()
     var btnClick14 = MutableLiveData<Boolean>()
+    var btnClick15 = MutableLiveData<Boolean>()
 
     //权限请求
     var btn1Click = BindingCommand<Void>(object : BindingAction {
@@ -93,6 +94,11 @@ class HomeViewModel : BaseViewModel() {
     //AgentWeb
     fun btnClick14() {
         btnClick14.value = true
+    }
+
+    //指纹识别
+    fun btnClick15() {
+        btnClick15.value = true
     }
 
 }

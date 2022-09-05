@@ -52,7 +52,9 @@ ext {
             // kotlin扩展（可选）
             implementation_ktx            : 'com.geyifeng.immersionbar:immersionbar-ktx:3.2.2',
             // fragment快速实现（可选）
-            immersionbar_components       : 'com.geyifeng.immersionbar:immersionbar-components:3.2.2'
+            immersionbar_components       : 'com.geyifeng.immersionbar:immersionbar-components:3.2.2',
+            //https://github.com/Cazaea/SweetAlertDialog  Android版的SweetAlert，清新文艺，快意灵动的甜心弹框
+            sweet_alert_dialog            : 'com.github.cazaea:sweet-alert-dialog:1.0.0',
 
     ]
 }

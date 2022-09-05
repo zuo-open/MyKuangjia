@@ -1,0 +1,12 @@
+apply plugin: 'com.android.library'
+apply from: "../../gradle/publishMaven.gradle"
+apply from: "../../module.build.gradle"
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.github.cazaea:sweet-alert-dialog:1.0.0'
+    implementation "com.android.support:appcompat-v7:28.0.0"
+}
