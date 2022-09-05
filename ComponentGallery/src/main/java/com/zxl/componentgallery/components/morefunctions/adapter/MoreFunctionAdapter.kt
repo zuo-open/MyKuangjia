@@ -1,6 +1,5 @@
 package com.zxl.componentgallery.components.morefunctions.adapter
 
-import com.chad.library.adapter.base.BaseMultiItemQuickAdapter
 import com.chad.library.adapter.base.BaseProviderMultiAdapter
 import com.zxl.componentgallery.R
 import com.zxl.componentgallery.components.morefunctions.bean.FunctionBean
