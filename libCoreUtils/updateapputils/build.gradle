@@ -2,7 +2,6 @@ apply plugin: 'kotlin-android-extensions'
 apply from: "../../module.build.gradle"
 apply from: "../../gradle/publishMaven.gradle"
 
-
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:28.0.0'

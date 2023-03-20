@@ -1,7 +1,3 @@
-plugins {
-    id 'com.android.library'
-    id 'kotlin-android'
-}
 apply from: "../../module.build.gradle"
 apply from: "../../gradle/publishMaven.gradle"
 
