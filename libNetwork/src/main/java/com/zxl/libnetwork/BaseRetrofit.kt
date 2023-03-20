@@ -28,8 +28,8 @@ open class BaseRetrofit {
     inline fun <reified S> getService() = getService(S::class.java)
 
     //获取api实现类
-    fun <T> getService(clazz: Class<T>): T {
-        return Retrofit.Builder().baseUrl("http://www.baidu.com")
+    open fun <T> getService(clazz: Class<T>): T {
+        return Retrofit.Builder().baseUrl("https://www.wanandroid.com")
             .client(mClient)
             .addConverterFactory(GsonConverterFactory.create())
             .build().create(clazz)

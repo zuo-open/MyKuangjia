@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:name=".Apl"
@@ -16,8 +16,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyKuangjia">
         <activity
+            android:name=".ui.main.demo.kotlinDemo.flow.FlowDemo1Activity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="false" />
+        <activity
+            android:name="com.zxl.mykuangjia.ui.main.home.http.HttpRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.main.home.multilanguage.MultilanguageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.main.demo.mviDemo.main.MVIDemoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.main.home.splash.SplashActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Launcher">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,8 +41,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.zxl.mykuangjia.ui.main.home.http.HttpRequestActivity" />
-        <activity android:name=".ui.main.home.multilanguage.MultilanguageActivity" />
+        <service
+            android:name="update.UpdateAppService"
+            android:exported="false" />
+        <service android:name=".ui.main.home.splash.LoadSplashDataService" />
     </application>
 
 </manifest>

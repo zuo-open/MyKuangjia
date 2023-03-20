@@ -28,6 +28,15 @@ dependencies {
     api libs.immersionbar_components
     api libs.retrofit
     api libs.convert_gson
+    api libs.utilcodex
+    api libs.kotlinx_coroutines_core
+    api libs.kotlinx_coroutines_android
+    api libs.retrofit_converter_moshi
+    api libs.retrofit_converter_gson
+    api libs.refresh_layout_kernel
+    api libs.refresh_header_classics
+    api libs.refresh_footer_classics
+    api libs.base_recyclerView_addapterHelper
 //    implementation project(path: ':libCoreUtils:serviceModule')
 //    implementation project(path: ':libCoreUtils:imagewatcher')
 //    implementation project(path: ':libNetwork')

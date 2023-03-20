@@ -23,6 +23,8 @@ import com.zxl.mykuangjia.BR
 import com.zxl.mykuangjia.R
 import com.zxl.mykuangjia.databinding.FragmentHomeBinding
 import com.zxl.mykuangjia.ui.main.home.multilanguage.MultilanguageActivity
+import com.zxl.mykuangjia.ui.main.demo.kotlinDemo.flow.FlowDemo1Activity
+import com.zxl.mykuangjia.ui.main.demo.mviDemo.main.MVIDemoActivity
 import org.koin.android.ext.android.get
 
 class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding>() {
@@ -77,35 +79,54 @@ class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding>() {
             startActivity(Intent(requireActivity(), DemoActivity::class.java))
         }
 
+        //应用更新
         mViewModel.btnClick9.observe(this) {
             startActivity(Intent(requireActivity(), UpdateUtilsMainActivity::class.java))
         }
-
+        //网络请求
         mViewModel.btnClick10.observe(this) {
             startActivity(Intent(requireActivity(), HttpRequestActivity::class.java))
         }
-
+        //多语言
         mViewModel.btnClick11.observe(this) {
             startActivity(Intent(requireActivity(), MultilanguageActivity::class.java))
         }
-
+        //手势解锁
         mViewModel.btnClick12.observe(this) {
             startActivity(Intent(requireActivity(), GestureLockActivity::class.java))
         }
-
+        //zxing扫一扫
         mViewModel.btnClick13.observe(this) {
             startActivity(Intent(requireActivity(), ZxingLiteMainActivity::class.java))
         }
 
+        //AgentWeb
         mViewModel.btnClick14.observe(this) {
             startActivity(Intent(requireActivity(), AgentWebMainActivity::class.java))
         }
 
+        //FingerPrint指纹识别
         mViewModel.btnClick15.observe(this) {
             startActivity(Intent(requireActivity(), FingerPrintActivity::class.java))
         }
 
+        //FingerPrint指纹识别
+        mViewModel.btnClick16.observe(this) {
+            startActivity(Intent(requireActivity(), FlowDemo1Activity::class.java))
+        }
 
+        //mviDemo
+        mViewModel.btnClick17.observe(this) {
+            startActivity(Intent(requireActivity(), MVIDemoActivity::class.java))
+        }
+
+
+    }
+
+
+    override fun initData() {
+        super.initData()
+        mViewModel.testFlow()
     }
 
 

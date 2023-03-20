@@ -1,10 +1,16 @@
 package com.zxl.mykuangjia.ui.main.home
 
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.pansoft.basecode.binding.BindingAction
 import com.pansoft.basecode.binding.BindingCommand
 import com.zxl.basecommon.base.BaseViewModel
+import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.flow.*
+import kotlinx.coroutines.launch
 
 class HomeViewModel : BaseViewModel() {
 
@@ -23,6 +29,12 @@ class HomeViewModel : BaseViewModel() {
     var btnClick13 = MutableLiveData<Boolean>()
     var btnClick14 = MutableLiveData<Boolean>()
     var btnClick15 = MutableLiveData<Boolean>()
+    var btnClick16 = MutableLiveData<Boolean>()
+    var btnClick17 = MutableLiveData<Boolean>()
+
+    var a = MutableStateFlow(1)
+    var b = MutableStateFlow(2)
+    var c = a.combine(b) { a, b -> a + b }
 
     //权限请求
     var btn1Click = BindingCommand<Void>(object : BindingAction {
@@ -100,5 +112,51 @@ class HomeViewModel : BaseViewModel() {
     fun btnClick15() {
         btnClick15.value = true
     }
+
+    //kotlin协程-flow
+    fun btnClick16() {
+        btnClick16.value = true
+    }
+
+    //mvidemo
+    fun btnClick17() {
+        btnClick17.value = true
+    }
+
+    fun testFlow() {
+        viewModelScope.launch {
+            val reduce = flowOf(1, 2, 3).onStart {
+                Log.e("flow", "onStart1")
+            }.onStart {
+                Log.e("flow", "onStart2")
+            }.onCompletion {
+                Log.e("flow", "onCompletion1")
+            }.onCompletion {
+                Log.e("flow", "onCompletion2")
+            }.reduce { accumulator, value ->
+                Log.e("flow", "$accumulator---$value")
+                accumulator + value
+            }
+            Log.e("flow", "result:$reduce")
+
+
+        }
+    }
+
+
+}
+
+
+interface interfaceA {
+    fun a(a: interfaceB)
+}
+
+
+interface interfaceB {
+    fun b()
+}
+
+
+fun test123(param: interfaceB.() -> Unit) {
 
 }

@@ -65,7 +65,7 @@ public class ImageWatcher extends FrameLayout implements GestureDetector.OnGestu
     private int mWidth, mHeight;
     private int mBackgroundColor = 0x00000000;
     private int mTouchMode = TOUCH_MODE_NONE;
-    private final float mTouchSlop;
+    private final float mTouchSlop;//最小滑动距离
 
     private float mFingersDistance;
     private float mFingersCenterX;
@@ -88,7 +88,7 @@ public class ImageWatcher extends FrameLayout implements GestureDetector.OnGestu
     private final ViewPager vPager;
     protected SparseArray<ImageView> mImageGroupList; // 图片所在的ImageView控件集合，Int类型的Key对应position
     protected List<Uri> mUrlList; // 图片地址列表
-    protected int initPosition;
+    protected int initPosition;//初始化展示图片位置
     private int currentPosition;
     private int mPagerPositionOffsetPixels; // viewpager当前在屏幕上偏移量
     private Loader loader; // 图片加载者
@@ -125,6 +125,11 @@ public class ImageWatcher extends FrameLayout implements GestureDetector.OnGestu
         this.detachAffirmative = true;
     }
 
+    /**
+     * 这是底部导航View
+     *
+     * @param ip
+     */
     public void setIndexProvider(IndexProvider ip) {
         indexProvider = ip;
         if (indexProvider != null) {
@@ -279,23 +284,25 @@ public class ImageWatcher extends FrameLayout implements GestureDetector.OnGestu
         if (loader == null) {
             throw new NullPointerException("please invoke `setLoader` first [loader == null]");
         }
-
+        //没有图片则不显示，此时ImageWatcher不显示
         if (i != null && i.getDrawable() == null) return;
 
+        //如果当前没有初始化布局
         if (!isInitLayout) {
             initI = i;
             initImageGroupList = imageGroupList;
             initUrlList = urlList;
             return;
         }
-
+        //这是当前显示位置
         currentPosition = initPosition;
-
+        //移除之前的动画
         if (animImageTransform != null) animImageTransform.cancel();
         animImageTransform = null;
 
         mImageGroupList = imageGroupList;
         mUrlList = urlList;
+        //移除iSource
         iSource = null;
 
         ImageWatcher.this.setVisibility(View.VISIBLE);
@@ -943,27 +950,32 @@ public class ImageWatcher extends FrameLayout implements GestureDetector.OnGestu
             }
         }
 
+        //设置默认配置
         private boolean setDefaultDisplayConfigs(final ImageView imageView, final int pos, boolean hasPlayBeginAnimation) {
             boolean isFindEnterImagePicture = false;
-
+            //判断是否是刚进入时的状态
             if (pos == initPosition && !hasPlayBeginAnimation) {
                 isFindEnterImagePicture = true;
                 iSource = imageView;
             }
             ImageView originRef = null;
+            //获取列表中选中的ImaegView
             if (mImageGroupList != null) {
                 originRef = mImageGroupList.get(pos);
             }
             if (originRef != null) {
                 final int[] location = new int[2];
+                //获取列表选中ImageView的在屏幕上的坐标
                 originRef.getLocationOnScreen(location);
+                //变换当前ImageView的坐标
                 imageView.setTranslationX(location[0]);
                 int locationYOfFullScreen = location[1];
+                //减去状态栏高度
                 locationYOfFullScreen -= mStatusBarHeight;
                 imageView.setTranslationY(locationYOfFullScreen);
                 imageView.getLayoutParams().width = originRef.getWidth();
                 imageView.getLayoutParams().height = originRef.getHeight();
-
+                //写入初始缩略图的瞬时状态
                 ViewState.write(imageView, ViewState.STATE_ORIGIN).width(originRef.getWidth()).height(originRef.getHeight());
 
                 final Drawable bmpMirror = originRef.getDrawable();
@@ -977,6 +989,7 @@ public class ImageWatcher extends FrameLayout implements GestureDetector.OnGestu
                     if (isFindEnterImagePicture) {
                         animSourceViewStateTransform(imageView, vsThumb);
                     } else {
+                        //回复原先状态
                         ViewState.restore(imageView, vsThumb.mTag);
                     }
                 }

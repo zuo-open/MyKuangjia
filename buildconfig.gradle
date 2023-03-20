@@ -11,50 +11,64 @@ ext {
     ]
 
     dependencies = [
-            recycler                      : 'androidx.recyclerview:recyclerview:1.2.1',
-            core_ktx                      : 'androidx.core:core-ktx:1.3.2',
-            appcompat                     : 'androidx.appcompat:appcompat:1.2.0',
-            annotation                    : 'androidx.annotation:annotation:1.2.0',
-            lifecycle_viewmodel_ktx       : "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version",
-            lifecycle_livedata_ktx        : "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version",
-            lifecycle_viewmodel_savedstate: "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version",
-            constraintLayout              : 'androidx.constraintlayout:constraintlayout:2.0.4',
-            material_design               : 'com.google.android.material:material:1.2.1',
+            recycler                        : 'androidx.recyclerview:recyclerview:1.2.1',
+            core_ktx                        : 'androidx.core:core-ktx:1.3.2',
+            appcompat                       : 'androidx.appcompat:appcompat:1.2.0',
+            annotation                      : 'androidx.annotation:annotation:1.2.0',
+            lifecycle_viewmodel_ktx         : "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version",
+            lifecycle_livedata_ktx          : "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version",
+            lifecycle_viewmodel_savedstate  : "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version",
+            constraintLayout                : 'androidx.constraintlayout:constraintlayout:2.0.4',
+            material_design                 : 'com.google.android.material:material:1.2.1',
             // Koin main features for Android
             // koin_android                  : "io.insert-koin:koin-android:$koin_version"
-            androidx_scope                : 'org.koin:koin-androidx-scope:2.0.1',
-            androidx_viewmodel            : 'org.koin:koin-androidx-viewmodel:2.0.1',
-            BaseRecyclerViewAdapterHelper : 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.7',
+            androidx_scope                  : 'org.koin:koin-androidx-scope:2.0.1',
+            androidx_viewmodel              : 'org.koin:koin-androidx-viewmodel:2.0.1',
+            BaseRecyclerViewAdapterHelper   : 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.7',
             //glide
-            glide                         : 'com.github.bumptech.glide:glide:4.13.0',
-            glide_annotationProcessor     : 'com.github.bumptech.glide:compiler:4.13.0',
+            glide                           : 'com.github.bumptech.glide:glide:4.13.0',
+            glide_annotationProcessor       : 'com.github.bumptech.glide:compiler:4.13.0',
             //toasty
-            toasty                        : 'com.github.GrenderG:Toasty:1.5.2',
+            toasty                          : 'com.github.GrenderG:Toasty:1.5.2',
             //rxbinding
-            rxbinding                     : 'com.jakewharton.rxbinding4:rxbinding:4.0.0',
+            rxbinding                       : 'com.jakewharton.rxbinding4:rxbinding:4.0.0',
             //QMUI
-            qmui_android                  : 'com.github.Tencent.QMUI_Android:qmui:2.0.1',
+            qmui_android                    : 'com.github.Tencent.QMUI_Android:qmui:2.0.1',
             //Toasty https://github.com/GrenderG/Toasty
-            toasty                        : 'com.github.GrenderG:Toasty:1.5.2',
+            toasty                          : 'com.github.GrenderG:Toasty:1.5.2',
             //shimmerlayout (骨架屏使用)
-            shimmerlayout                 : 'io.supercharge:shimmerlayout:2.1.0',
+            shimmerlayout                   : 'io.supercharge:shimmerlayout:2.1.0',
             //Gloading https://github.com/luckybilly/Gloading
-            gloading                      : 'com.github.luckybilly:Gloading:v1.1.0',
+            gloading                        : 'com.github.luckybilly:Gloading:v1.1.0',
             //aspectJ
-            aspectJ                       : 'org.aspectj:aspectjrt:1.9.6',
+            aspectJ                         : 'org.aspectj:aspectjrt:1.9.6',
             //retrofit
-            retrofit                      : 'com.squareup.retrofit2:retrofit:2.9.0',
-            convert_gson                  : 'com.squareup.retrofit2:converter-gson:2.9.0',
-            logging_interceptor           : 'com.squareup.okhttp3:logging-interceptor:4.2.0',
+            retrofit                        : 'com.squareup.retrofit2:retrofit:2.9.0',
+            convert_gson                    : 'com.squareup.retrofit2:converter-gson:2.9.0',
+            logging_interceptor             : 'com.squareup.okhttp3:logging-interceptor:4.2.0',
             //ImmersionBar
             // 基础依赖包，必须要依赖
-            immersionBar                  : 'com.geyifeng.immersionbar:immersionbar:3.2.2',
+            immersionBar                    : 'com.geyifeng.immersionbar:immersionbar:3.2.2',
             // kotlin扩展（可选）
-            implementation_ktx            : 'com.geyifeng.immersionbar:immersionbar-ktx:3.2.2',
+            implementation_ktx              : 'com.geyifeng.immersionbar:immersionbar-ktx:3.2.2',
             // fragment快速实现（可选）
-            immersionbar_components       : 'com.geyifeng.immersionbar:immersionbar-components:3.2.2',
+            immersionbar_components         : 'com.geyifeng.immersionbar:immersionbar-components:3.2.2',
             //https://github.com/Cazaea/SweetAlertDialog  Android版的SweetAlert，清新文艺，快意灵动的甜心弹框
-            sweet_alert_dialog            : 'com.github.cazaea:sweet-alert-dialog:1.0.0',
+            sweet_alert_dialog              : 'com.github.cazaea:sweet-alert-dialog:1.0.0',
+            //https://github.com/Blankj/AndroidUtilCode
+            utilcodex                       : 'com.blankj:utilcodex:1.31.0',
+            //协程
+            kotlinx_coroutines_core         : "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1",
+            kotlinx_coroutines_android      : "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1",
+            // json 转换(更好地支持data class)
+            retrofit_converter_moshi        : "com.squareup.retrofit2:converter-moshi:2.9.0",
+            retrofit_converter_gson         : "com.squareup.retrofit2:converter-gson:2.9.0",
+            //refreshLayout
+            refresh_layout_kernel           : 'io.github.scwang90:refresh-layout-kernel:2.0.5',    //核心必须依赖
+            refresh_header_classics         : 'io.github.scwang90:refresh-header-classics:2.0.5',
+            refresh_footer_classics         : 'io.github.scwang90:refresh-footer-classics:2.0.5',    //经典加载
+            //
+            base_recyclerView_addapterHelper: 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.10'
 
     ]
 }
