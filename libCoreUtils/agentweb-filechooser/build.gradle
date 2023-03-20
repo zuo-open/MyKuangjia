@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-
+apply from: "../../gradle/publishMaven.gradle"
 def configs = rootProject.ext.android
 android {
     compileSdkVersion configs.compileSdk
